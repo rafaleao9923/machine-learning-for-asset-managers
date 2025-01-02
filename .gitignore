@@ -1,2 +1,8 @@
 Quantitative Equity Portfolio Management.pdf
 README_draft.md
+*.png
+*.csv
+data
+test.py
+.aider*
+.aider.*
