@@ -134,6 +134,9 @@ def optPort(cov, mu=None):
     w /= np.dot(ones.T, w)
     return w
 
+def portfolio_volatility(weights, day_returns, cov_matrix):
+    return np.sqrt(np.dot(weights.T, np.dot(cov_matrix, weights)))
+
 def portfolio_annualised_performance(weights, day_returns, cov_matrix):
     returns = np.sum(day_returns.T.dot(weights)) * 252
     std = np.sqrt(np.dot(weights, np.dot(cov_matrix, weights))) * np.sqrt(252)
