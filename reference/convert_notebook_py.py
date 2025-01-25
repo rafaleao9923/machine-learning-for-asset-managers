@@ -9,19 +9,6 @@ logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
 def convert_notebook_to_python(notebook_path: Union[str, Path], output_path: Union[str, Path, None] = None) -> Path:
-    """Convert a single Jupyter notebook to a Python file.
-    
-    Args:
-        notebook_path: Path to the input notebook file
-        output_path: Optional custom output path for the Python file
-        
-    Returns:
-        Path to the generated Python file
-    
-    Raises:
-        FileNotFoundError: If notebook file doesn't exist
-        json.JSONDecodeError: If notebook is invalid JSON
-    """
     notebook_path = Path(notebook_path).resolve()
     if not notebook_path.exists():
         raise FileNotFoundError(f"Notebook not found: {notebook_path}")
@@ -62,14 +49,6 @@ def convert_notebook_to_python(notebook_path: Union[str, Path], output_path: Uni
     return output_path
 
 def process_directory(directory_path: Union[str, Path]) -> List[Path]:
-    """Process all Jupyter notebooks in a directory and convert them to Python files.
-    
-    Args:
-        directory_path: Path to directory containing notebooks
-        
-    Returns:
-        List of paths to generated Python files
-    """
     directory_path = Path(directory_path).resolve()
     if not directory_path.is_dir():
         raise NotADirectoryError(f"Not a directory: {directory_path}")
