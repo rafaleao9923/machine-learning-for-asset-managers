@@ -1,7 +1,7 @@
 Quantitative Equity Portfolio Management.pdf
 *.png
 *.csv
-data
+# data
 test.py
 .aider*
 .aider.*

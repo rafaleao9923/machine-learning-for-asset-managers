@@ -131,3 +131,12 @@ dmypy.json
 # user defined
 csv
 img
+
+/.idea
+/Machine_Learning_for_Asset_Managers.egg-info
+/build
+/dist
+/.vs
+
+# user defined
+img

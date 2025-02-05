@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 
 from src.data import parse, bars
 
-%matplotlib inline
+# %matplotlib inline
 plt.style.use('ggplot')
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = 10,7
@@ -68,7 +68,7 @@ _ = ax.boxplot(df.price)
 
 
 with open('../data/IVE_tickbidask.txt') as file_input: 
-    
+    pass
 
 
 # The labels' Distribution
