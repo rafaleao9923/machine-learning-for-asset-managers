@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 
 from src.data import parse, bars
 
-# %matplotlib inline
+%matplotlib inline
 plt.style.use('ggplot')
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = 10,7

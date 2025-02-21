@@ -1,3 +1,6 @@
+# Generated from: 5_financial_lables.ipynb
+# Warning: This is an auto-generated file. Changes may be overwritten.
+
 # SNIPPET 5.1 T-VALUE OF A LINEAR TREND
 import statsmodels.api as sm1
 import numpy as np

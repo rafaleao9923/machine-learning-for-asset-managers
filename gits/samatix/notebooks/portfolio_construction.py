@@ -13,7 +13,7 @@ sys.path.append('../src')
 
 from src.testing.fixtures import CorrelationFactory
 
-# %matplotlib inline
+%matplotlib inline
 plt.style.use('ggplot')
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = 20,10

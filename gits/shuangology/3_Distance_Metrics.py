@@ -1,3 +1,6 @@
+# Generated from: 3_Distance_Metrics.ipynb
+# Warning: This is an auto-generated file. Changes may be overwritten.
+
 # # Chapter 3 Distance Metrics
 #
 # Look beyond correlations to understand codependency
@@ -142,4 +145,5 @@ cXY
 
 
 rr = np.random.normal(mu, sigma, size=(2, 1000))
-rr[0, :].shape
+rr[0,:].shape
+

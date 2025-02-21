@@ -6,8 +6,7 @@
 
 import numpy as np
 import pandas as pd
-# from sklearn.neighbors.kde import KernelDensity
-from sklearn.neighbors import KernelDensity
+from sklearn.neighbors.kde import KernelDensity
 import matplotlib.pyplot as plt
 
 
@@ -35,11 +34,11 @@ import matplotlib.pyplot as plt
 # 3. Modify Code Snippets 4.1 and 4.2 to work with a spectral biclustering algorithm. Do you get fundamentally different results ? 
 
 
-# çç
+çç
 
 
 # 3. Modify Code Snippets 4.1 and 4.2 to work with a spectral biclustering algorithm. Do you get fundamentally different results ? 
 
 
-# çç
+çç
 

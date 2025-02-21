@@ -1,3 +1,6 @@
+# Generated from: 2_Denoising_and_Detoning.ipynb
+# Warning: This is an auto-generated file. Changes may be overwritten.
+
 # # Chapter 2 Denoising and Detoning
 #
 # reduce the noise and enhance the signal included in an empirical covariance matrix.

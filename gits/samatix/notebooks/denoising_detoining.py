@@ -12,7 +12,7 @@ import seaborn as sns
 import sys
 sys.path.append('../src')
 
-# %matplotlib inline
+%matplotlib inline
 plt.style.use('ggplot')
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = 20,10

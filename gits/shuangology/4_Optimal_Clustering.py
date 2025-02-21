@@ -1,3 +1,6 @@
+# Generated from: 4_Optimal_Clustering.ipynb
+# Warning: This is an auto-generated file. Changes may be overwritten.
+
 # distinguish several types of clustering algorithms, including the following:
 #
 # 1 Connectivity: This clustering is based on distance connectivity, like hier- archical clustering. For an example in finance, see López de Prado (2016).
@@ -12,14 +15,6 @@
 #
 
 
-import seaborn as sns
-from sklearn.utils import check_random_state
-from scipy.linalg import block_diag
-from sklearn.metrics import silhouette_samples
-from sklearn.cluster import KMeans
-import pandas as pd
-import numpy as np
-import CovMatrix
 import os
 import sys
 nb_path = os.path.split(os.getcwd())[0]
@@ -27,10 +22,16 @@ if nb_path not in sys.path:
     sys.path.append(nb_path)
 
 
-corr0, eVal0, eVec0 = CovMatrix.init_para()
+import CovMatrix
+corr0,eVal0,eVec0 = CovMatrix.init_para()
+
 
 
 # SNIPPET 4.1 BASE CLUSTERING
+import numpy as np
+import pandas as pd
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_samples
 # ---------------------------------------------------
 
 
@@ -54,12 +55,13 @@ def clusterKMeansBase(corr0, maxNumClusters=10, n_init=10):
     return corr1, clstrs, silh
 
 
-corr1, clstrs, silh = clusterKMeansBase(pd.DataFrame(corr0))
+corr1,clstrs,silh = clusterKMeansBase(pd.DataFrame(corr0))
 
 
 # a new (reduced) observations matrix out of the elements that compose the K1 clusters, and rerun the base clustering algorithm on that reduced correlation matrix. Doing so will return a, possibly new, clustering for those elements in K1. To check its efficacy, we compare the average cluster quality before and after reclustering those elements in K1. If the average cluster quality improves, we return the accepted clustering from the base clustering concate- nated with the new clustering for the redone nodes.
 
 # SNIPPET 4.2 TOP-LEVEL OF CLUSTERING
+from sklearn.metrics import silhouette_samples
 # ---------------------------------------------------
 
 
@@ -116,6 +118,10 @@ def clusterKMeansTop(corr0, maxNumClusters=None, n_init=3):
 
 
 # SNIPPET 4.3 RANDOM BLOCK CORRELATION MATRIX CREATION
+import numpy as np
+import pandas as pd
+from scipy.linalg import block_diag
+from sklearn.utils import check_random_state
 # ---------------------------------------------------
 
 
@@ -169,9 +175,11 @@ def randomBlockCorr(nCols, nBlocks, random_state=None,
 
 
 # simulated a cov matraix with blocks
+import seaborn as sns
 corr_blk_simu = randomBlockCorr(100, 10)
 sns.heatmap(corr_blk_simu)
 
 
 # clustered using clusterKMeansTop
 sns.heatmap(clusterKMeansTop(corr_blk_simu)[0])
+
