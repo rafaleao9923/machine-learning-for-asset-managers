@@ -1,6 +1,3 @@
-# Generated from: distance_metrics.ipynb
-# Warning: This is an auto-generated file. Changes may be overwritten.
-
 # ## Linear Dependency 
 #
 # - Correlations are good for quantifying the **linear** codependency between random variables.

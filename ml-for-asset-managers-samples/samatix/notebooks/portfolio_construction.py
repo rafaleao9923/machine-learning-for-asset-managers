@@ -1,6 +1,3 @@
-# Generated from: portfolio_construction.ipynb
-# Warning: This is an auto-generated file. Changes may be overwritten.
-
 import pandas as pd
 import numpy as np
 
@@ -13,7 +10,6 @@ sys.path.append('../src')
 
 from src.testing.fixtures import CorrelationFactory
 
-%matplotlib inline
 plt.style.use('ggplot')
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = 20,10

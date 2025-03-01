@@ -1,9 +1,4 @@
-# Generated from: financial_labels.ipynb
-# Warning: This is an auto-generated file. Changes may be overwritten.
-
 # # Financial Labels
-
-
 import sys
 sys.path.append('../src')
 
@@ -15,7 +10,6 @@ import matplotlib.pyplot as plt
 
 from src.data import parse, bars
 
-%matplotlib inline
 plt.style.use('ggplot')
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = 10,7

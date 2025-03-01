@@ -1,6 +1,3 @@
-# Generated from: feature_importance.ipynb
-# Warning: This is an auto-generated file. Changes may be overwritten.
-
 import pandas as pd
 import numpy as np
 
@@ -8,21 +5,9 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-%matplotlib inline
 plt.style.use('ggplot')
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = 20,10
-
-
-# # Feature Importance Analysis
-# ## P-Value Caveats Demonstrations
-# P-Values has the following pitfalls:
-# - Rely on many strong assumptions
-# - Produces noisy estimates
-# - Is a probability of something we don't need: Given $H_0$ and an estimated $\hat{\beta}$, p-values
-# estimates the probability of obtaining a result equal or more extreme than $\hat{\beta}$, subject to $H_0$ being true.
-# We are more interested in the probability of $H_0$ being true given an observed $\hat{\beta}$
-# - Not generalizable out of sample
 
 
 from sklearn.datasets import make_classification

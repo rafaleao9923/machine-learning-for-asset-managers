@@ -1,6 +1,3 @@
-# Generated from: optimal_clustering.ipynb
-# Warning: This is an auto-generated file. Changes may be overwritten.
-
 # # Optimal Clustering
 
 
@@ -34,11 +31,11 @@ import matplotlib.pyplot as plt
 # 3. Modify Code Snippets 4.1 and 4.2 to work with a spectral biclustering algorithm. Do you get fundamentally different results ? 
 
 
-çç
+# çç
 
 
 # 3. Modify Code Snippets 4.1 and 4.2 to work with a spectral biclustering algorithm. Do you get fundamentally different results ? 
 
 
-çç
+# çç
 

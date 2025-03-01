@@ -1,6 +1,3 @@
-# Generated from: denoising_detoining.ipynb
-# Warning: This is an auto-generated file. Changes may be overwritten.
-
 import pandas as pd
 import numpy as np
 
@@ -12,7 +9,6 @@ import seaborn as sns
 import sys
 sys.path.append('../src')
 
-%matplotlib inline
 plt.style.use('ggplot')
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = 20,10
